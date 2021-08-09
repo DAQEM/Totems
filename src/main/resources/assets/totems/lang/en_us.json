@@ -1,0 +1,8 @@
+{
+  "item.totems.health_totem": "Health Totem",
+  "item.totems.totem_bag": "Totem Bag",
+  "itemGroup.totemstab": "Totems",
+  "container.totems.totem_bag": "Totem Bag",
+  "block.totems.totem_gem_ore": "Totem Gem Ore",
+  "item.totems.totem_gem": "Totem Gem"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "totems:block/totem_gem_ore"
+    }
+  }
+}

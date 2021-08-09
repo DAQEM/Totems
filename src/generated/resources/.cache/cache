@@ -1,0 +1,8 @@
+4b9803391913d92611b07282c216cec7ceb31fb6 assets/totems/blockstates/totem_gem_ore.json
+e3e5eee7ce53da01ff2553d3a470db6641ba96cb assets/totems/models/block/totem_gem_ore.json
+319697d6ccd360afd8e4d320fbadb8306e5f780e assets/totems/models/item/health_totem.json
+701bc14d6cea4bfea90bc619bad8b8b5ce5b2776 assets/totems/models/item/totem_bag.json
+a9ebc84868daa96662937d0f0d6ef355a69b1a73 assets/totems/models/item/totem_gem.json
+e3e5eee7ce53da01ff2553d3a470db6641ba96cb assets/totems/models/item/totem_gem_ore.json
+8b39a2fe63cbfae41959d9c1686815b925a08d29 data/totems/advancements/recipes/totemstab/totem_bag.json
+3f2fc96e76eff84172b6974977a8a9891941fdfa data/totems/recipes/totem_bag.json

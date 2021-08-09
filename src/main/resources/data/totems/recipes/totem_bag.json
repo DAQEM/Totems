@@ -1,0 +1,22 @@
+{
+  "type": "totems:totem_bag",
+  "pattern": [
+    "SWS",
+    "WGW",
+    "SWS"
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "G": {
+      "item": "totems:totem_gem"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "totems:totem_bag"
+  }
+}

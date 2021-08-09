@@ -1,0 +1,14 @@
+{
+  "type": "totems:recolor_totem_bag",
+  "ingredients": [
+    {
+      "type": "minecraft:dyes"
+    },
+    {
+      "item": "totems:totem_bag"
+    }
+  ],
+  "result": {
+    "item": "totems:totem_bag"
+  }
+}
