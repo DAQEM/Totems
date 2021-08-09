@@ -14,7 +14,11 @@ public class ModHealthModifier {
     public static void applyMaxHealthModifier(PlayerEntity player, float amount) {
         ModifiableAttributeInstance attribute = player.getAttribute(Attributes.MAX_HEALTH);
         if (attribute != null) {
-            attribute.applyPersistentModifier(new AttributeModifier(MAX_HEALTH_MODIFIER, "MaxHealth", amount * 2, AttributeModifier.Operation.ADDITION));
+            attribute.removeModifier(MAX_HEALTH_MODIFIER);
+            attribute.applyPersistentModifier(new AttributeModifier(MAX_HEALTH_MODIFIER, "TotemMaxHealth", amount * 2, AttributeModifier.Operation.ADDITION));
+            if (player.getHealth() > player.getMaxHealth()) {
+                player.setHealth(player.getMaxHealth());
+            }
         }
     }
 }
