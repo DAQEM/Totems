@@ -36,3 +36,7 @@ public class Totems {
         return new ResourceLocation(MODID, path);
     }
 }
+
+//TODO: Change display name and lore color of totem
+//TODO: Add glow to totem when max level
+//TODO: Different text color per level.

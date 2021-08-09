@@ -1,0 +1,19 @@
+{
+  "type": "totems:health_totem",
+  "pattern": [
+    "S",
+    "H",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "totems:totem_scrap"
+    },
+    "H": {
+      "item": "totems:heart"
+    }
+  },
+  "result": {
+    "item": "totems:health_totem"
+  }
+}

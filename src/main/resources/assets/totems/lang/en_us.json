@@ -4,5 +4,7 @@
   "itemGroup.totemstab": "Totems",
   "container.totems.totem_bag": "Totem Bag",
   "block.totems.totem_gem_ore": "Totem Gem Ore",
-  "item.totems.totem_gem": "Totem Gem"
+  "item.totems.totem_gem": "Totem Gem",
+  "item.totems.heart": "Heart",
+  "item.totems.totem_scrap": "Totem Scrap"
 }

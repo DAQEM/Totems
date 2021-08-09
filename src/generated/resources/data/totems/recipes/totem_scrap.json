@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "TDT",
+    " G "
+  ],
+  "key": {
+    "T": {
+      "item": "totems:totem_gem"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "totems:totem_scrap"
+  }
+}

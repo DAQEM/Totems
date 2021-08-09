@@ -21,7 +21,7 @@ public class EventPlayerTick {
                     for (int x = 0; x < itemHandler.getSlots(); ++x) {
                         ItemStack bagStack = itemHandler.getStackInSlot(x);
                         if (bagStack.getItem() instanceof HealthTotemItem) {
-                            //TODO: Write some code here.
+                            //TODO: Write some code here. ((HealthTotemItem) bagStack.getItem()).getLevel(bagStack)
                         }
                     }
                 }

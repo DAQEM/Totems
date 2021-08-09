@@ -19,6 +19,8 @@ public class ClientItemModelProvider extends ItemModelProvider {
         itemBuilder(itemGenerated, "health_totem");
 
         itemBuilder(itemGenerated, "totem_gem");
+        itemBuilder(itemGenerated, "totem_scrap");
+        itemBuilder(itemGenerated, "heart");
         doubleItemBuilder(itemGenerated, "totem_bag", "totem_bag_string");
 
         cubeAll("totem_gem_ore", modLoc("block/totem_gem_ore"));

@@ -20,5 +20,6 @@ public class DataGenerators {
 
         gen.addProvider(new ClientItemModelProvider(gen, existingFileHelper));
         gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
+        gen.addProvider(new ModRecipeProvider(gen));
     }
 }
