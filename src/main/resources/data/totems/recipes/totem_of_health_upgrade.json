@@ -1,5 +1,5 @@
 {
-  "type": "totems:health_totem_upgrade",
+  "type": "totems:totem_of_health_upgrade",
   "pattern": [
     " S ",
     "THT",
@@ -10,13 +10,13 @@
       "item": "totems:totem_scrap"
     },
     "T": {
-      "item": "totems:health_totem"
+      "item": "totems:totem_of_health"
     },
     "H": {
       "item": "totems:heart"
     }
   },
   "result": {
-    "item": "totems:health_totem"
+    "item": "totems:totem_of_health"
   }
 }

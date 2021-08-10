@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "totems:item/health_totem"
+    "layer0": "totems:item/totem_of_vein_mining"
   }
 }

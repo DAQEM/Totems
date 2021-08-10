@@ -16,7 +16,15 @@ public class ClientItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
-        itemBuilder(itemGenerated, "health_totem");
+        itemBuilder(itemGenerated, "totem_of_health");
+        itemBuilder(itemGenerated, "totem_of_armor");
+        itemBuilder(itemGenerated, "totem_of_hunger");
+        itemBuilder(itemGenerated, "totem_of_speed");
+        itemBuilder(itemGenerated, "totem_of_strength");
+        itemBuilder(itemGenerated, "totem_of_haste");
+        itemBuilder(itemGenerated, "totem_of_tree_felling");
+        itemBuilder(itemGenerated, "totem_of_flight");
+        itemBuilder(itemGenerated, "totem_of_vein_mining");
 
         itemBuilder(itemGenerated, "totem_gem");
         itemBuilder(itemGenerated, "totem_scrap");

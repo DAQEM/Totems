@@ -25,7 +25,7 @@ public class TotemBagItem extends Item {
     }
 
     public int getInventorySize(ItemStack stack) {
-        return 27;
+        return 9;
     }
 
     public IItemHandler getInventory(ItemStack stack) {

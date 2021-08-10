@@ -28,7 +28,7 @@ public class Totems {
     @MethodsReturnNonnullByDefault
     public static final ItemGroup TAB = new ItemGroup("totemstab") {
         public ItemStack createIcon() {
-            return new ItemStack(ModItems.healthTotem);
+            return new ItemStack(ModItems.totemOfHealth);
         }
     };
 
@@ -43,33 +43,29 @@ public class Totems {
 //TODO: Generate custom structures
 //TODO: Add the Heart to chests
 
-//TODO: 1  Totem of Health
-//TODO: 2  Totem of Strength
-//TODO: 3  Totem of Flight
-//TODO: 4  Totem of Night Vision
-//TODO: 5  Totem of Water Breathing
-//TODO: 6  Totem of Speed
-//TODO: 7  Totem of Haste
-//TODO: 8  Totem of Vein Mining
-//TODO: 9  Totem of Blooming            (Amy)
-//TODO: 10 Totem of Scaring             (Amy)
-//TODO: 11 Totem of End Calming         (Amy)
-//TODO: 12 Totem of
-//TODO: 13 Totem of
-//TODO: 14 Totem of
-//TODO: 15 Totem of
-//TODO: 16 Totem of
-//TODO: 17 Totem of
-//TODO: 18 Totem of
-//TODO: 19 Totem of
-//TODO: 20 Totem of
-//TODO: 21 Totem of
-//TODO: 22 Totem of
-//TODO: 23 Totem of
-//TODO: 24 Totem of
-//TODO: 25 Totem of
-//TODO: 26 Totem of
-//TODO: 27 Totem of
+//HOTBAR
+//DONE: 1 Totem of Health              (1 more heart per level)                        (!Heart)
+//TODO: 2 Totem of Armor                (1 more armour per level)                       (!Armour)
+//TODO: 3 Totem of Hunger               (10% less hunger per level)                         (Food)
 
+// POTION EFFECTS
+//TODO: 4 Totem of Speed               (10% faster walking (and flying?) per level)    (!Boots)
+//TODO: 5 Totem of Strength            (10% more strength per level)                       (Sword?)
+//TODO: 6 Totem of Haste               (10% faster mining per level)                   (!Wither)
+
+//SPECIAL ABILITIES
+//TODO: 7 Totem of Vein Mining         (10% chance per level)                          (!Mining Helmet)
+//TODO: 8 Totem of Flight              (hard to craft)                                 (!Wings)
+//TODO: 9 Totem of Tree Felling        (with chances)                                      (Axe)
+
+
+
+//NOPE: 10 Totem of Night Vision
+//NOPE: 11 Totem of Water Breathing
+
+//NOPE: 12 Totem of Blooming           (A)
+//NOPE: 13 Totem of Scaring             (A)
+//NOPE: 14 Totem of End Calming         (A)
+//NOPE: 15 Totem of Nether Calming      (A)
 
 

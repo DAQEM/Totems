@@ -1,7 +1,7 @@
 package me.daqem.totems.inventory;
 
-import me.daqem.totems.Totems;
 import me.daqem.totems.init.ModContainerTypes;
+import me.daqem.totems.init.ModItems;
 import me.daqem.totems.item.TotemBagItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -9,12 +9,10 @@ import net.minecraft.inventory.container.ClickType;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tags.ItemTags;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
 import javax.annotation.Nonnull;
-import java.util.Objects;
 
 public class TotemBagContainer extends Container {
 
@@ -36,10 +34,18 @@ public class TotemBagContainer extends Container {
             addSlot(new SlotItemHandler(this.itemHandler, i, x, y) {
                 @Override
                 public boolean isItemValid(@Nonnull ItemStack stack) {
-                    return Objects.requireNonNull(ItemTags.getCollection().get(Totems.getId("totems"))).contains(stack.getItem());
+                    if (this.getSlotIndex() == 0) return stack.getItem() == ModItems.totemOfHealth;
+                    if (this.getSlotIndex() == 1) return stack.getItem() == ModItems.totemOfArmor;
+                    if (this.getSlotIndex() == 2) return stack.getItem() == ModItems.totemOfHunger;
+                    if (this.getSlotIndex() == 3) return stack.getItem() == ModItems.totemOfSpeed;
+                    if (this.getSlotIndex() == 4) return stack.getItem() == ModItems.totemOfStrength;
+                    if (this.getSlotIndex() == 5) return stack.getItem() == ModItems.totemOfHaste;
+                    if (this.getSlotIndex() == 6) return stack.getItem() == ModItems.totemOfTreeFelling;
+                    if (this.getSlotIndex() == 7) return stack.getItem() == ModItems.totemOfFlight;
+                    if (this.getSlotIndex() == 8) return stack.getItem() == ModItems.totemOfVeinMining;
+                    return false;
                 }
             });
-
         }
 
         final int rowCount = this.itemHandler.getSlots() / 9;
