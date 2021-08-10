@@ -55,7 +55,7 @@ public class Totems {
 
 //SPECIAL ABILITIES
 //TODO: 7 Totem of Vein Mining         (10% chance per level)                          (!Mining Helmet)
-//TODO: 8 Totem of Flight              (hard to craft)                                 (!Wings)
+//DONE: 8 Totem of Flight              (hard to craft)                                 (!Wings)
 //TODO: 9 Totem of Tree Felling        (with chances)                                      (Axe)
 
 

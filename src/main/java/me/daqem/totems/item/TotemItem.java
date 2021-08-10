@@ -2,7 +2,6 @@ package me.daqem.totems.item;
 
 import me.daqem.totems.Totems;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -39,18 +38,14 @@ public class TotemItem extends Item {
     }
 
     @Override
-    public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) {
-        if (this.getLevel(stack) < 1) this.setLevel(stack, 1);
-        if (this.getLevel(stack) > this.getMaxLevel(stack)) this.setLevel(stack, this.getMaxLevel(stack));
-    }
-
-    @Override
     public boolean hasEffect(ItemStack stack) {
         return this.getLevel(stack) == this.getMaxLevel(stack);
     }
 
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+        if (this.getLevel(stack) < 1) this.setLevel(stack, 1);
+        if (this.getLevel(stack) > this.getMaxLevel(stack)) this.setLevel(stack, this.getMaxLevel(stack));
         tooltip.add(new KeybindTextComponent(TextFormatting.GOLD + "Level: " + TextFormatting.YELLOW + this.getLevel(stack)));
     }
 
