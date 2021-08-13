@@ -3,7 +3,7 @@ package me.daqem.totems.events;
 import me.daqem.totems.init.ModItems;
 import me.daqem.totems.item.TotemBagItem;
 import me.daqem.totems.item.TotemItem;
-import me.daqem.totems.util.modifier.ModHealthModifier;
+import me.daqem.totems.util.modifier.ModModifiers;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -44,9 +44,9 @@ public class EventPlayerTick {
                     int level = ((TotemItem) totemOfHealth.getItem()).getLevel(totemOfHealth);
                     if (level > highestLevel) highestLevel = level;
                 }
-                ModHealthModifier.applyMaxHealthModifier(player, highestLevel);
+                ModModifiers.applyMaxHealthModifier(player, highestLevel);
             } else {
-                ModHealthModifier.applyMaxHealthModifier(player, 0);
+                ModModifiers.applyMaxHealthModifier(player, 0);
             }
             if (!totemsOfArmor.isEmpty()) {
                 int highestLevel = 0;
@@ -54,9 +54,9 @@ public class EventPlayerTick {
                     int level = ((TotemItem) totemOfArmor.getItem()).getLevel(totemOfArmor);
                     if (level > highestLevel) highestLevel = level;
                 }
-                ModHealthModifier.applyArmourModifier(player, highestLevel);
+                ModModifiers.applyArmourModifier(player, highestLevel);
             } else {
-                ModHealthModifier.applyArmourModifier(player, 0);
+                ModModifiers.applyArmourModifier(player, 0);
             }
             if (!totemsOfFlight.isEmpty()) {
                 int highestLevel = 0;

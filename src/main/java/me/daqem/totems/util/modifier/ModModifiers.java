@@ -7,7 +7,7 @@ import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.UUID;
 
-public class ModHealthModifier {
+public class ModModifiers {
 
     public static final UUID MAX_HEALTH_MODIFIER = UUID.fromString("4ca2225e-f936-11eb-9a03-0242ac130003");
     public static final UUID ARMOR_MODIFIER = UUID.fromString("03fcf32c-fa1b-11eb-9a03-0242ac130003");
