@@ -44,19 +44,19 @@ public class Totems {
 //TODO: Add the Heart to chests
 
 //HOTBAR
-//DONE: 1 Totem of Health              (1 more heart per level)                        (!Heart)
-//TODO: 2 Totem of Armor                (1 more armour per level)                       (!Armour)
-//TODO: 3 Totem of Hunger               (10% less hunger per level)                         (Food)
+//DONE: 1 Totem of Health              (1 more heart per level)
+//DONE: 2 Totem of Armor               (1 more armour per level)
+//TODO: 3 Totem of Hunger              (10% less hunger per level)
 
 // POTION EFFECTS
-//TODO: 4 Totem of Speed               (10% faster walking (and flying?) per level)    (!Boots)
-//TODO: 5 Totem of Strength            (10% more strength per level)                       (Sword?)
-//TODO: 6 Totem of Haste               (10% faster mining per level)                   (!Wither)
+//DONE: 4 Totem of Speed               (10% faster walking and flying per level)
+//TODO: 5 Totem of Strength            (10% more strength per level)
+//TODO: 6 Totem of Haste               (10% faster mining per level)
 
 //SPECIAL ABILITIES
-//TODO: 7 Totem of Vein Mining         (10% chance per level)                          (!Mining Helmet)
-//DONE: 8 Totem of Flight              (hard to craft)                                 (!Wings)
-//TODO: 9 Totem of Tree Felling        (with chances)                                      (Axe)
+//TODO: 7 Totem of Vein Mining         (10% chance per level)
+//DONE: 8 Totem of Flight              (hard to craft)
+//TODO: 9 Totem of Tree Felling        (with chances)
 
 
 

@@ -4,7 +4,6 @@ import me.daqem.totems.Totems;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.KeybindTextComponent;
 import net.minecraft.util.text.TextFormatting;
@@ -50,6 +49,6 @@ public class TotemItem extends Item {
     }
 
     public static boolean isTotemOfFlying(ItemStack stack) {
-        return Objects.equals(stack.getItem().getRegistryName(), new ResourceLocation(Totems.MODID, "totem_of_flight"));
+        return Objects.equals(stack.getItem().getRegistryName(), Totems.getId("totem_of_flight"));
     }
 }

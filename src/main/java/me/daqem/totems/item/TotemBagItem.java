@@ -3,6 +3,7 @@ package me.daqem.totems.item;
 import me.daqem.totems.Totems;
 import me.daqem.totems.inventory.TotemBagContainer;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.container.SimpleNamedContainerProvider;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.Item;
@@ -17,19 +18,19 @@ import net.minecraft.world.World;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class TotemBagItem extends Item {
+public class TotemBagItem extends Item implements IInventory {
     private static final String NBT_COLOR = "TotemBagColor";
 
     public TotemBagItem() {
         super(new Properties().group(Totems.TAB).maxStackSize(1));
     }
 
-    public int getInventorySize(ItemStack stack) {
+    public int getInventorySize() {
         return 9;
     }
 
     public IItemHandler getInventory(ItemStack stack) {
-        ItemStackHandler stackHandler = new ItemStackHandler(getInventorySize(stack));
+        ItemStackHandler stackHandler = new ItemStackHandler(getInventorySize());
         stackHandler.deserializeNBT(stack.getOrCreateTag().getCompound("Inventory"));
         return stackHandler;
     }
@@ -80,5 +81,50 @@ public class TotemBagItem extends Item {
                 items.add(stack);
             }
         }
+    }
+
+    @Override
+    public int getSizeInventory() {
+        return 9;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public ItemStack getStackInSlot(int index) {
+        return null;
+    }
+
+    @Override
+    public ItemStack decrStackSize(int index, int count) {
+        return null;
+    }
+
+    @Override
+    public ItemStack removeStackFromSlot(int index) {
+        return null;
+    }
+
+    @Override
+    public void setInventorySlotContents(int index, ItemStack stack) {
+
+    }
+
+    @Override
+    public void markDirty() {
+
+    }
+
+    @Override
+    public boolean isUsableByPlayer(PlayerEntity player) {
+        return false;
+    }
+
+    @Override
+    public void clear() {
+
     }
 }

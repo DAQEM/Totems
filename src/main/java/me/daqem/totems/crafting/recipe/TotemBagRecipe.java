@@ -25,6 +25,7 @@ import java.util.Objects;
 
 public class TotemBagRecipe extends ShapedRecipe {
 
+    public static final ResourceLocation NAME = Totems.getId("totem_bag");
     public static final Serializer SERIALIZER = new Serializer();
 
     public TotemBagRecipe(ResourceLocation idIn, String groupIn, int recipeWidthIn, int recipeHeightIn, NonNullList<Ingredient> recipeItemsIn, ItemStack recipeOutputIn) {

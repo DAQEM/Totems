@@ -1,6 +1,7 @@
 package me.daqem.totems.crafting.recipe;
 
 import com.google.gson.JsonObject;
+import me.daqem.totems.Totems;
 import me.daqem.totems.init.ModItems;
 import me.daqem.totems.item.TotemItem;
 import net.minecraft.inventory.CraftingInventory;
@@ -23,6 +24,7 @@ import java.util.Map;
 
 public class TotemOfHealthUpgradeRecipe extends ShapedRecipe {
 
+    public static final ResourceLocation NAME = Totems.getId("totem_of_health_upgrade");
     public static final Serializer SERIALIZER = new Serializer();
 
     public TotemOfHealthUpgradeRecipe(ResourceLocation idIn, String groupIn, int recipeWidthIn, int recipeHeightIn, NonNullList<Ingredient> recipeItemsIn, ItemStack recipeOutputIn) {

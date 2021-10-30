@@ -11,7 +11,7 @@ import net.minecraft.util.text.ITextComponent;
 
 public class TotemBagContainerScreen extends ContainerScreen<TotemBagContainer> {
 
-    private static final ResourceLocation TEXTURE = new ResourceLocation(Totems.MODID, "textures/gui/container/totem_bag.png");
+    private static final ResourceLocation TEXTURE = Totems.getId("textures/gui/container/totem_bag.png");
 
     private final PlayerInventory playerInventory;
     private final int inventoryRows;

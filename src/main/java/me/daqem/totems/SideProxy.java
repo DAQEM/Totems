@@ -27,7 +27,6 @@ class SideProxy {
         MinecraftForge.EVENT_BUS.register(new EventPlayerTick());
         MinecraftForge.EVENT_BUS.register(new EventPlayerChangedDimension());
 
-
         Registration.register();
     }
 
